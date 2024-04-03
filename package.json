@@ -1,30 +1,18 @@
 {
   "name": "strapi-plugin-custom-ckeditor",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Integrates CKEditor 5 into your Strapi project as a fully customizable custom field. (Unofficial integration)",
   "private": false,
-  "keywords": [
-    "strapi",
-    "ckeditor",
-    "ckeditor5",
-    "ckeditor 5",
-    "wysiwyg",
-    "rich text",
-    "editor"
-  ],
   "strapi": {
-    "name": "ckeditor5",
-    "displayName": "CKEditor 5",
-    "description": "Integrates CKEditor 5 into your Strapi project as a fully customizable custom field. (Unofficial integration)",
-    "kind": "plugin"
+    "name": "custom-ckeditor",
+    "description": "Description of Custom Ckeditor plugin",
+    "kind": "plugin",
+    "displayName": "Custom Ckeditor"
   },
-  "files": [
-    "admin",
-    "server",
-    "strapi-admin.js",
-    "strapi-server.js"
-  ],
   "dependencies": {
+    "@strapi/design-system": "^1.6.3",
+    "@strapi/helper-plugin": "^4.6.0",
+    "@strapi/icons": "^1.6.3",
     "@ckeditor/ckeditor5-alignment": "^41.0.0",
     "@ckeditor/ckeditor5-autoformat": "^41.0.0",
     "@ckeditor/ckeditor5-autosave": "^41.0.0",
@@ -63,24 +51,30 @@
     "@ckeditor/ckeditor5-show-blocks": "^41.0.0",
     "ckeditor5": "^41.0.0",
     "@ckeditor/ckeditor5-react": "^6.2.0",
-    "@strapi/design-system": "^1.10.1",
+    "prop-types": "^15.7.2",
     "lodash": "^4.17.21",
-    "prop-types": "^15.8.1",
     "sanitize-html": "^2.10.0"
   },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.6"
+  },
   "peerDependencies": {
-    "@strapi/strapi": "^4.13.0"
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.2.1"
   },
   "author": {
-    "name": "corvalol"
+    "name": "A Strapi developer"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nshenderov/strapi-plugin-ckeditor.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: no tests specified\" && exit 1"
-  },
+  "maintainers": [
+    {
+      "name": "A Strapi developer"
+    }
+  ],
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"

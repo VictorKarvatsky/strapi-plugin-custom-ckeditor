@@ -43,7 +43,7 @@ export default {
        icon: CKEditorIcon,
        intlLabel: {
          id: pluginId + ".label",
-         defaultMessage: "CKEditor 5",
+         defaultMessage: "Custom CKEditor 5",
        },
        intlDescription: {
          id: pluginId + ".description",
